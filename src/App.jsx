@@ -1,4 +1,4 @@
-import './App.css';
+import s from'./App.module.css';
 import {useSelector, useDispatch} from "react-redux";
 
 function App() {
@@ -13,11 +13,11 @@ function App() {
     dispatch({type: "GET_CASH", payload: cash})
   }
     return (
-        <div className={'app'}>
-          <div style={{fontSize: "3rem"}}>{cash}</div>
-            <div style={{display: "flex"}}>
-                <button onClick={() => addCash(Number(prompt()))}>Пополнить счет</button>
-                <button onClick={() => getCash(Number(prompt()))}>Снять со счета</button>
+        <div className={s.app}>
+          <div className={s.cash}>{cash}</div>
+            <div className={s.buttonsBox}>
+                <button className={s.addButton} onClick={() => addCash(Number(prompt()))}>Пополнить счет</button>
+                <button className={s.getButton} onClick={() => getCash(Number(prompt()))}>Снять со счета</button>
             </div>
         </div>
     );

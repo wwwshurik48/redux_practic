@@ -1,0 +1,26 @@
+.app {
+  border: 5px solid mediumpurple;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto;
+  background-color: bisque;
+}
+.cash {
+  text-align: center;
+  font-size: 5rem;
+  color: lawngreen;
+}
+.buttonsBox {
+  text-align: center;
+  margin-top: 05px;
+}
+button{
+  height: 40px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 16px;
+  color: greenyellow;
+  background-color: cornflowerblue;
+}
